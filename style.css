@@ -120,13 +120,17 @@ body>p, body>blockquote {
 	vertical-align: top;
 }
 /** Override JQuery UI theme */
-#about-contents .ui-accordion-header {
+#about-contents h3 {
 	color: #777;
 	font-weight: bold;
 	border: 0;
 	margin: 0;
 	background: none;
+	padding-top: 0;
+	padding-bottom: 0;
 }
-#about-contents div, #about-contents p {
+#about-contents div {
 	border: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
