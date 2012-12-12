@@ -4,76 +4,96 @@
     <meta charset="utf-8">
     <title>David Duong's Personal Page</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/smoothness/jquery-ui.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 <script>
 <!--
 $(function() {
-	// According to your browser, the time is:
-	$('#modified').text("Last Modified: " + document.lastModified + " GMT");
-	$('#email').html("Email: <a href='ma&#105;lto&#58;david&#64;%6E&#113;&#100;&#37;&#50;Eme'>&#100;av&#105;d&#64;nqd&#46;me</a>");
+    // According to your browser, the time is:
+    $('#modified').text("Last Modified: " + document.lastModified + " GMT");
+    $('#email').html("Email: <a href='ma&#105;lto&#58;david&#64;%6E&#113;&#100;&#37;&#50;Eme'>&#100;av&#105;d&#64;nqd&#46;me</a>");
 
-	var style = document.body.style;
-	if(document.body.style['borderRadius'] === undefined && document.body.style['MozBorderRadius'] === undefined) {
-		$('#thought_bubble').text('is usually a pretty thought bubble on newer browsers, but instead you are seeing a gracefully degraded square because you are using an older browser');
-	}
+    $('#about-contents').accordion({ heightStyle: "content" });
 });
 // -->
-    </script>
+</script>
   </head>
   <body>
     <h1>david|nqd.me</h1>
     <p id="modified"></p>
-    <blockquote class="bubble">
-      <p>Welcome to my personal page which will eventually host my online portfolio and blog. Until then, check out the <a href="#links">links</a> below. By the way, this <span id="thought_bubble">thought bubble is just CSS applied to a regular blockquote..</span></p>
-      <footer><cite>David Nguyen Quoc Duong</cite></footer>
-    </blockquote>
-    <h2 id="about">About Me</h2>
-    <p>
-      I am passionate about the pursuit of knowledge and the joy of designing what is essentially thought-stuff. Software is little more than imagination, but it is something which also provides real utility.
-    </p>
-    <blockquote class="quote">
-		<p>The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.</p>
-		<footer>&mdash; <cite>The Mythical Man Month by Frederic P. Brooks</cite></footer>
-    </blockquote>
-    <p>
-      I believe that by learning new ideas, methodologies and tools, a designer gains new instruments which she can use to sculpt grander castles in the sandbox of her imagination.
-    </p>
-    <h3>Experience</h3>
-    <p>
-      I am an experienced software developer at Strata Health where I design and implement solutions used by clinicians in patient flow management. In 2009, I completed my BSc in Computer Science with an internship at IBM Canada where I constructed and verified interfaces used to expose database monitoring information.
-    </p>
-    <h3>Expertise</h3>
-    <p>
-      My expertise is in web design and web application development which encompases enabling technologies: frontend/backend technologies including RDBMSs, languages and frameworks; web architecture and W3C specifications.
-    </p>
-    <p>
-      I believe that a broad and detailed field of expertise entails familiarity with the right tool for any problem. For example: my server-side languages of choice are Java and PHP, but using JavaScript with Node.js when creating RESTful JSON services is just too simple; my favourite RDBMS is MySQL, but complex requirements demand a feature-rich RDBMS such as Oracle or DB2; similarly, REST and JSON is simpler to implement and consume (especially with AJAX) but SOAP and XML is arguably more flexible and has richer standards.
-    </p>
-    <h3>Interests</h3>
-    <p>
-      In terms of web technologies, my interests currently include: HTML 5 (particularly in creating mobile offline web apps) and CSS 3; Ruby on Rails; NoSQL database systems such as MongoDB; XML-related particularly XSL and XQuery; semantic web, social media and online user experience.
-    </p>
-    <h2 id="contact">Contact</h2>
-    <ul>
-    	<li id="email">Email: <a id="email" href="javascript:void(0);">email</a></li>
-    	<li>Twitter: <a href="http://twitter.com/davidnqd">@davidnqd</a></li>
-    	<li>Resume: <a href="resume-online.pdf">Online Version (PDF)</a></li>
-    	<li>LinkedIn: <a href="http://www.linkedin.com/pub/david-duong/49/451/9a0">Profile</a></li>
-	</ul>
-    <h2 id="links">Links</h2>
-    <div class="inline-list">
-      <span>
-        <a href="http://www.forizon.com">My portfolio circa 2008:
-        <img src="forizon.png" alt="Screenshot of My Old Profile circa 2008"/></a>
-      </span>
-      <span>
-        <a href="http://vizi.forizon.com">Vizi - Image Navigator written in Java:
-        <img src="http://www.forizon.com/vizi/images/vizi-400x345.png" alt="Screenshot of Vizi"/></a>
-      </span>
-      <span>
-        <a href="http://termblaster.forizon.com">termBlaster - FireFox extension:
-        <img src="termblaster.png" alt="Screenshot of termBlaster"/></a>
-      </span>
+    <div class="column" id="contents">
+        <blockquote class="bubble">
+          <p>Welcome to my personal page which will eventually host my online portfolio and blog. Until then, check out the <a href="#links">links</a> below.</p>
+          <footer><cite>David Nguyen Quoc Duong</cite></footer>
+        </blockquote>
+        <h2>About</h2>
+        <div id="about-contents">
+        <h3>Why</h3>
+        <div>
+            <p>
+              Software influences much of our modern world, but it is little more than "thought-stuff":
+            </p>
+            <blockquote class="quote">
+                <p>The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.</p>
+                <footer>&mdash; <cite>The Mythical Man Month by Frederic P. Brooks</cite></footer>
+            </blockquote>
+            <p>
+              By learning new ideas, methodologies and tools, a designer gains new instruments which can be used to sculpt grand castles in what is little more than an imaginary sandbox.
+            </p>
+            </div>
+            <h3>Experience</h3>
+            <div>
+            <p>
+              I am an experienced software developer at Strata Health where I design and implement solutions used by clinicians in patient flow management. In 2009, I completed my BSc in Computer Science with an internship at IBM Canada where I constructed and verified interfaces used to expose database monitoring information.
+            </p>
+            </div>
+            <h3>Expertise</h3>
+            <div>
+            <p>
+              My expertise is in web design and web application development which encompases enabling technologies: frontend/backend technologies including RDBMSs, languages and frameworks; web architecture and W3C specifications.
+            </p>
+            <p>
+              I believe that a broad and detailed field of expertise entails familiarity with the right tool for any problem. For example: my server-side languages of choice are Java and PHP, but using JavaScript with Node.js when creating RESTful JSON services is just too simple; my favourite RDBMS is MySQL, but complex requirements demand a feature-rich RDBMS such as Oracle or DB2; similarly, REST and JSON is simpler to implement and consume (especially with AJAX) but SOAP and XML is arguably more flexible and has richer standards.
+            </p>
+            </div>
+            <h3>Interests</h3>
+            <p>
+              In terms of web technologies, my interests currently include: HTML 5 (particularly in creating mobile offline web apps) and CSS 3; Ruby on Rails; NoSQL database systems such as MongoDB; XML-related particularly XSL and XQuery; semantic web, social media and online user experience.
+            </p>
+            <h3 id="contact">Contact</h3>
+            <ul>
+                <li id="email">Email: <a id="email" href="javascript:void(0);">email</a></li>
+                <li>Twitter: <a href="http://twitter.com/davidnqd">@davidnqd</a></li>
+                <li>Resume: <a href="resume-online.pdf">Online Version (PDF)</a></li>
+                <li>LinkedIn: <a href="http://www.linkedin.com/pub/david-duong/49/451/9a0">Profile</a></li>
+            </ul>
+        </div>
+        <h2 id="links">Links</h2>
+        <div class="inline-list">
+          <a href="http://www.forizon.com">
+            <span>
+              My portfolio circa 2008:
+              <img src="forizon.png" alt="Screenshot of My Old Profile circa 2008"/>
+            </span>
+          </a>
+          <a href="http://vizi.forizon.com">
+            <span>
+              Vizi - Image Navigator written in Java:
+              <img src="http://www.forizon.com/vizi/images/vizi-400x345.png" alt="Screenshot of Vizi"/>
+            </span>
+          </a>
+          <a href="http://termblaster.forizon.com">
+            <span>
+              termBlaster - FireFox extension:
+              <img src="termblaster.png" alt="Screenshot of termBlaster"/>
+            </span>
+          </a>
+        </div>
+    </div>
+    <div class="column" id="left">
+    	<a class="twitter-timeline" href="https://twitter.com/davidnqd" data-widget-id="278785081399709697">Tweets by @davidnqd</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
   </body>
 </html>
