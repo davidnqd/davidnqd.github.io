@@ -95,13 +95,19 @@ body>p, body>blockquote {
 	text-align: right;
 	font-size: small;
 }
+#columns {
+	text-align: center;
+	margin-top: 1em;
+}
 #contents {
 	max-width: 50em;
 }
 #left {
-	max-width: 30em;
+	margin-left: 1em;
+	max-width: 45em;
 }
 .column {
+	text-align: left;
 	display: inline-block;
 	vertical-align: top;
 }
