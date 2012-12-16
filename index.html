@@ -12,12 +12,12 @@
 $(function() {
     // According to your browser, the time is:
     if (document.lastModified != null) {
-        var timezone = (jQuery.browser.webkit)? " UTC" : "";
+        var timezone = ($.browser.webkit)? " UTC" : "";
         $('#modified').text("Last Modified: " + document.lastModified + timezone);
     }
     $('#email').html("<a href='ma&#105;lto&#58;david&#64;%6E&#113;&#100;&#37;&#50;Eme'>&#100;av&#105;d&#64;nqd&#46;me</a>");
     $('#about-contents').accordion({ heightStyle: "content", collapsible: true });
-    if (jQuery.support.boxModel) {
+    if ($.support.boxModel) {
         $('#browser-message').text("");
     }
 });
@@ -46,66 +46,48 @@ $(function() {
             </blockquote>
             <h2>About</h2>
             <div id="about-contents">
-				<h3>Pursuit of knowledge</h3>
-				<div>
-					<p>
-					  Software influences much of our modern world, despite being little more than "thought-stuff":
-					</p>
-					<blockquote class="quote">
-						<p>The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.</p>
-						<footer>&mdash; <cite>The Mythical Man Month by Frederic P. Brooks</cite></footer>
-					</blockquote>
-					<p>
-					  By learning new ideas, methodologies and tools, a designer gains new instruments which can be used to sculpt grand castles in what is little more than an imaginary sandbox.
-					</p>
-				</div>
-				<h3>Experience</h3>
-				<div>
-					<p>
-					  I am an experienced software developer at Strata Health where we create solutions used by clinicians in patient flow management. In 2009, I completed my BSc in Computer Science with an internship at IBM Canada where I constructed and verified interfaces used to expose database monitoring information.
-					</p>
-					<p>
-					  My roles include/have included team lead, coach, software developer, network support team member, and all-around go-to guy.
-					</p>
-				</div>
-				<h3>Expertise</h3>
-				<div>
-					<p>
-					  My expertise is in web design and web application development which encompases enabling technologies: frontend/backend technologies including RDBMSs, languages and frameworks; web architecture and W3C specifications.
-					</p>
-					<p>
-					  I believe that a broad and detailed field of expertise entails familiarity with the right tool for any problem. For example: my server-side languages of choice are Java and PHP, but using JavaScript with Node.js when creating RESTful JSON services is just too simple; my favourite RDBMS is MySQL, but complex requirements demand a feature-rich RDBMS such as Oracle or DB2; similarly, REST and JSON is simpler to implement and consume (especially with AJAX) but SOAP and XML is arguably more flexible and has richer standards.
-					</p>
-				</div>
-				<h3>Interests</h3>
-				<div>
-					<p>
-					  In terms of web technologies, my interests currently include: HTML 5 (particularly in creating mobile offline web apps) and CSS 3; Ruby on Rails; NoSQL database systems such as MongoDB; XML-related particularly XSL and XQuery; semantic web, social media and online user experience.
-					</p>
-				</div>
+                <h3>Pursuit of knowledge</h3>
+                <div>
+                    <p>
+                      Software influences much of our modern world, despite being little more than "thought-stuff":
+                    </p>
+                    <blockquote class="quote">
+                        <p>The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.</p>
+                        <footer>&mdash; <cite>The Mythical Man Month by Frederic P. Brooks</cite></footer>
+                    </blockquote>
+                    <p>
+                      By learning new ideas, methodologies and tools, a designer gains new instruments which can be used to sculpt grand castles in what is little more than an imaginary sandbox.
+                    </p>
+                </div>
+                <h3>A little bit on me</h3>
+                <div>
+                    <p>
+                      I am an experienced software developer at Strata Health Solutions, a company which specializes in leveraging web technologies to improve patient flow for the patients, their families and their caregivers.
+                    </p>
+                </div>
             </div>
         </div>
-		<h2 id="links">Links</h2>
-		<div class="inline-list">
-		  <a href="http://www.forizon.com">
-			<span>
-			  My portfolio circa 2008:
-			  <img src="forizon.png" alt="Screenshot of My Old Profile circa 2008"/>
-			</span>
-		  </a>
-		  <a href="http://vizi.forizon.com">
-			<span>
-			  Vizi - Image Navigator written in Java:
-			  <img src="http://www.forizon.com/vizi/images/vizi-400x345.png" alt="Screenshot of Vizi"/>
-			</span>
-		  </a>
-		  <a href="http://termblaster.forizon.com">
-			<span>
-			  termBlaster - FireFox extension:
-			  <img src="termblaster.png" alt="Screenshot of termBlaster"/>
-			</span>
-		  </a>
-		</div>
+        <h2 id="links">Links</h2>
+        <div class="inline-list">
+          <a href="http://www.forizon.com">
+            <span>
+              My portfolio circa 2008:
+              <img src="forizon.png" alt="Screenshot of My Old Profile circa 2008"/>
+            </span>
+          </a>
+          <a href="http://vizi.forizon.com">
+            <span>
+              Vizi - Image Navigator written in Java:
+              <img src="http://www.forizon.com/vizi/images/vizi-400x345.png" alt="Screenshot of Vizi"/>
+            </span>
+          </a>
+          <a href="http://termblaster.forizon.com">
+            <span>
+              termBlaster - FireFox extension:
+              <img src="termblaster.png" alt="Screenshot of termBlaster"/>
+            </span>
+          </a>
+        </div>
     </div>
   </body>
 </html>
