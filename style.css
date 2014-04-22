@@ -48,7 +48,6 @@ body>p, body>blockquote {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     width: 300px;
-    height: 300px;
 }
 .inline-list span {
     display: inline-block;
