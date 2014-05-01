@@ -18,12 +18,9 @@ a {
     margin: 0;
     color: #888888;
 }
-body>blockquote {
-    padding-left: 2em;
-    border-top: 0.1em solid #E0E0FF;
-    border-left: 0.6em solid #E0E0FF;
+.quote p {
+	margin-right: 2em;
 }
-
 .quote:after {
     content: '\201D';
     font-weight: bold;
@@ -34,13 +31,10 @@ body>blockquote {
     z-index: -1;
 }
 
-body>blockquote footer {
-    margin-left: 3em;
-}
-
 blockquote {
 	font-family: Georgia, Serif;
 	line-height: 1;
+	text-align: justify;
 }
 
 .inline-list img {
