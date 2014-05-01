@@ -26,9 +26,8 @@ body>blockquote {
 
 .quote:after {
     content: '\201D';
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 6em;
+    font-size: 5em;
     line-height: 0;
     float: right;
     color: #06A;
@@ -38,8 +37,10 @@ body>blockquote {
 body>blockquote footer {
     margin-left: 3em;
 }
-body>p, body>blockquote {
-    margin-left: 3em;
+
+blockquote {
+	font-family: Georgia, Serif;
+	line-height: 1;
 }
 
 .inline-list img {
