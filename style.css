@@ -3,6 +3,7 @@ body {
     font-size: 90%;
 }
 h1 {
+	font-family: 'Open Sans', sans-serif;
     border-bottom: solid 0.05em #AAAAAA;
 }
 h3 {
