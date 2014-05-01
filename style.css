@@ -18,6 +18,10 @@ a {
     margin: 0;
     color: #888888;
 }
+.quote {
+	font-family: Georgia, Serif;
+	text-align: justify;
+}
 .quote p {
 	margin-right: 2em;
 }
@@ -32,9 +36,7 @@ a {
 }
 
 blockquote {
-	font-family: Georgia, Serif;
 	line-height: 1;
-	text-align: justify;
 }
 
 .inline-list img {
@@ -58,6 +60,7 @@ blockquote {
     background: #333399;
     -moz-border-radius: 2.5em;
     border-radius: 2.5em;
+    margin-top: 0;
     margin-left: 3em;
     margin-right: 3em;
     padding-top: 0.5em;
