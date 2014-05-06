@@ -3,6 +3,7 @@ body {
     font-size: 90%;
 }
 h1 {
+	font-family: 'Open Sans', sans-serif;
     border-bottom: solid 0.05em #AAAAAA;
 }
 h3 {
@@ -17,28 +18,25 @@ a {
     margin: 0;
     color: #888888;
 }
-body>blockquote {
-    padding-left: 2em;
-    border-top: 0.1em solid #E0E0FF;
-    border-left: 0.6em solid #E0E0FF;
+.quote {
+	font-family: Georgia, Serif;
+	text-align: justify;
 }
-
+.quote p {
+	margin-right: 2em;
+}
 .quote:after {
     content: '\201D';
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 6em;
+    font-size: 5em;
     line-height: 0;
     float: right;
     color: #06A;
     z-index: -1;
 }
 
-body>blockquote footer {
-    margin-left: 3em;
-}
-body>p, body>blockquote {
-    margin-left: 3em;
+blockquote {
+	line-height: 1;
 }
 
 .inline-list img {
@@ -62,6 +60,7 @@ body>p, body>blockquote {
     background: #333399;
     -moz-border-radius: 2.5em;
     border-radius: 2.5em;
+    margin-top: 0;
     margin-left: 3em;
     margin-right: 3em;
     padding-top: 0.5em;
