@@ -6,10 +6,15 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
     border-bottom: solid 0.05em #AAAAAA;
     margin: 0.1em;
-    margin-left: 0.5em
+    margin-left: 0.5em;
+    color: #3B3325
+}
+h2 {
+    color: #A07025;
 }
 h3 {
     text-transform: uppercase;
+    color: #A07025;
 }
 
 a {
@@ -59,7 +64,7 @@ blockquote {
 .bubble {
     display: inline-block;
     position: relative;
-    background: #333399;
+    background: #3B66AA;
     -moz-border-radius: 2.5em;
     border-radius: 2.5em;
     margin-top: 0;
@@ -81,7 +86,7 @@ blockquote {
     left: 2em;
     border-width: 0 1em 2em 0;
     border-style: solid;
-    border-color: transparent #333399;
+    border-color: transparent #3B66AA;
 }
 .bubble footer {
     float: left;
@@ -125,7 +130,7 @@ blockquote {
 }
 /** Override JQuery UI theme */
 #about-contents h3 {
-    color: #777;
+    color: #C6A97C;
     font-weight: bold;
     border: 0;
     margin: 0;
