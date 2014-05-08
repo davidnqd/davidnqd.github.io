@@ -13,7 +13,7 @@ h3 {
 }
 
 a {
-    color: #404080;
+    color: #2555A0;
     text-decoration: none;
 }
 #modified {
@@ -120,7 +120,8 @@ blockquote {
 #contact {
     margin-bottom: 0.5em;
     margin-left: 3em;
-    color: grey;
+    color: #A07025;
+	font-family: 'Anonymous Pro', sans-serif;
 }
 /** Override JQuery UI theme */
 #about-contents h3 {
