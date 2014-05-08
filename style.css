@@ -4,13 +4,13 @@ body {
 }
 h1 {
 	font-family: 'Open Sans', sans-serif;
-    border-bottom: solid 0.05em #AAAAAA;
+    border-bottom: solid 0.05em #3B3325;
     margin: 0.1em;
     margin-left: 0.5em;
-    color: #3B3325
+    color: #432F0F;
 }
 h2 {
-    color: #A07025;
+    color: #604316;
 }
 h3 {
     text-transform: uppercase;
@@ -130,7 +130,7 @@ blockquote {
 }
 /** Override JQuery UI theme */
 #about-contents h3 {
-    color: #C6A97C;
+    color: #A07025;
     font-weight: bold;
     border: 0;
     margin: 0;
